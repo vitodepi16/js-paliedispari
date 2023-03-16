@@ -28,17 +28,23 @@ btnCalc.addEventListener('click', function() {
     let resultBot = document.getElementById('resultBot');
 
     if ((choiceUsers === "even") && (sum % 2 === 0)){
-        resultBot.innerHTML = `<h1>al computer è uscito ${numBot}</h1>`
-        result.innerHTML = `<h1>Hai vinto </h1>`
+        resultBot.innerHTML = `<h1 class="text-warning-emphasis
+
+        ">Al computer è uscito ${numBot}</h1>`
+        result.innerHTML = `<h1 class="text-success">Hai vinto </h1>`
 
     } else if ((choiceUsers === "odd") && (sum % 2 === 1)){
-        resultBot.innerHTML = `<h1>al computer è uscito ${numBot}</h1>`
-        result.innerHTML = `<h1>Hai vinto</h1>`
+        resultBot.innerHTML = `<h1 class="text-warning-emphasis
+
+        ">Al computer è uscito ${numBot}</h1>`
+        result.innerHTML = `<h1 class="text-success">Hai vinto</h1>`
     }
     
     else {
-        resultBot.innerHTML = `<h1>al computer è uscito ${numBot}</h1>`
-        result.innerHTML = `<h1>Hai perso</h1>`
+        resultBot.innerHTML = `<h1 class="text-warning-emphasis
+
+        ">Al computer è uscito ${numBot}</h1>`
+        result.innerHTML = `<h1 class="text-danger">Hai perso</h1>`
     }
     console.log(sum);
 
