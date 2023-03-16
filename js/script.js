@@ -10,20 +10,35 @@ Dichiariamo chi ha vinto.
 
 
 
-const numBot = Math.floor(Math.random() * 5) + 1;
 
-const numUser = document.querySelector('choice');
-
-
-console.log(numUser);
-console.log(numBot)
+const numUser = document.getElementById('insertNmr');
+const choiceUser = document.getElementById('choice');
 
 
 
 const btnCalc = document.querySelector('button');
 
 btnCalc.addEventListener('click', function() {
+    let choiceUsers = choiceUser.value;
+    let numUser2 = parseInt(numUser.value);
+
+    let numBot = Math.floor(Math.random() * 5) + 1;
+    let sum = numUser2 + numBot;
+    let result = document.getElementById('result');
+
+    if ((choiceUsers = "even") && (sum % 2 === 0)){
+       
+        result.innerHTML = `<h1>Hai vinto </h1>`
+
+    } else if ((choiceUsers = "odd") && (sum % 2 === 1)){
+        result.innerHTML = `<h1>Hai vinto</h1>`
+    }
     
+    else {
+        result.innerHTML = `<h1>Hai perso</h1>`
+    }
+    console.log(sum);
+
 
 
 })
