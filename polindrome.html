@@ -5,19 +5,27 @@
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <title>Bootsrtap freelance</title>
+    <title>Test parole Palindrome</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
   </head>
   <body class="mybody">
-    <div class="text-center m-5">
-      <h1 class="fs-1">INSERISCI UNA PAROLA</h1>
-      <h3 class="fs-3">Inserisci una parola è scopri se è palindroma </h3>
-          <input type="text" class="ms-1" id="checkWorld">
-    <button class="btn btn-success" id="btnSend">scopri se parole che hai scritto è Polindroma</button>
-    <div id="result"></div>
+    <div class="text-center m-5 d-flex flex-column">
+      <h1 class="fs-1 text-uppercase">Inserisci una parola, Scopri se è palindroma </h1>
+     <h3 class="m-3">Cosa vuol dire una parola Palindroma?  </h3> 
+      <p class="fs-3">  Etimologia dal greco: palindromos che corre all'indietro, composto di palin di nuovo, all'indietro, e dal tema di dramein correre. Palindroma è la sequenza che, letta in un verso e nel verso contrario, mantiene lo stesso significato. </p>
+      <p class="text-secondary">Degli esempi possono essere: <br> ACCA, ADA, ADDA, AEREA, AFA, AIA, ALA, ALALA, ALLA, ALULA, AMA, ANILINA, ANNA, ANONA, ARA, ARERA', ARRA, ATTA, AVA, AVALLAVA, AVEVA, AZZA.
+        DVD.
+        EBBE, EFFE, ELLE, EMME, ENNE, ERE, EREGGERE, ERRE, ESOSE, ESSE, ETATE.
+        GAG.
+        IDI, INANI, INGEGNI, INNI, ISSASSI, ISSI, ITI, IVI.
+        KAYAK. <br> Provane Qualcuno !</p>
+          <input type="text" class="ms-1" id="checkWorld" placeholder="Scrivi la parola da controllare">
+    <button class="btn btn-success mt-5 p-2" id="btnSend">Scopri se parole che hai scritto è Polindroma</button>
+    <div class="text-uppercase m-3 " id="result"></div>
 
     </div>
+
   
     <div class="text-center">
         <a class="btn btn-secondary mt-3 align-content-center" href="http://127.0.0.1:5500/pariOdispari.html" role="button" aria-disabled="true">Gioca con I numeri</a>

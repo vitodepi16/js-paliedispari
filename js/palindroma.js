@@ -20,12 +20,12 @@ console.log(parolaInvertita);
 const result = document.getElementById('result');
 if (parolaSemplificata === parolaInvertita){
     
-    result.innerHTML = `    <h1>Congratulazioni la tua parola è palidroma</h1>
+    result.innerHTML = `    <h1 class="text-success">Congratulazioni la tua parola è palidroma</h1>
     `;
    
 } else {
  
-    result.innerHTML = `    <h1>Mi dispiace la tua parola non è palidroma</h1>
+    result.innerHTML = `    <h1 class="text-danger">Mi dispiace la tua parola non è palidroma</h1>
     `;
 }
 
