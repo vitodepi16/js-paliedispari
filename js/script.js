@@ -31,20 +31,20 @@ btnCalc.addEventListener('click', function() {
         resultBot.innerHTML = `<h1 class="text-warning
 
         ">Al computer è uscito ${numBot}</h1>`
-        result.innerHTML = `<h1 class="text-success">Hai vinto !!! </h1>`
+        result.innerHTML = `<h1 class="text-success">Hai VINTO !!! </h1>`
 
     } else if ((choiceUsers === "odd") && (sum % 2 === 1)){
         resultBot.innerHTML = `<h1 class="text-warning
 
         ">Al computer è uscito ${numBot}</h1>`
-        result.innerHTML = `<h1 class="text-success">Hai vinto !!! </h1>`
+        result.innerHTML = `<h1 class="text-success">Hai VINTO !!! </h1>`
     }
     
     else {
         resultBot.innerHTML = `<h1 class="text-warning
 
         ">Al computer è uscito ${numBot}</h1>`
-        result.innerHTML = `<h1 class="text-danger">Hai perso</h1>`
+        result.innerHTML = `<h1 class="text-danger">Hai PERSO</h1>`
     }
     console.log(sum);
 
